@@ -1,15 +1,19 @@
 # TokyoTechPortalLogin
-#東工大ポータルログイン
-###前書き
+# 東工大ポータルログイン
+### 前書き
 東工大ポータルの自動ログイン用につくりました。  
 使い勝手は悪いです。  
 自己責任でご利用ください。
 不具合があればissueどうぞ。
-###使い方
+### 機能
+学籍番号とパスワードの入力画面に遷移したら、ログイン作業を全てやります。  
+タイムアウトエラー（1時間操作しないとなるやつ）が発生したら再ログインを自動で行います。
+### 使い方
 このレポジトリをzipファイルでダウンロードしてもらって、
 展開したフォルダ（Zipフォルダと呼びます）に Matrix.txt を作ってください。  
 そこに、A1A2A3・・・J5J6J7　となるように並べてください。  
-例)ABCDEFGABCDEFGABCDEFGABCDEFGABCDEFGABCDEFGABCDEFGABCDEFGABCDEFGABCDEFG  
+例)ABCDEFGABCDEFGABCDEFGABCDEFGABCDEFGABCDEFGABCDEFGABCDEFGABCDEFGABCDEFG   
+他にも、Account.txtに学籍番号を、Password.txtにパスワードを書いてください。   
 そしたら、Zipフォルダをchrome拡張として追加します。  
 chromeの右上の三点リーダー的なのから、設定  
 （あるいは）ctrl( or command ) + ,  
@@ -18,7 +22,7 @@ chromeの右上の三点リーダー的なのから、設定
 →Zipフォルダを選択  
 →以上！
 
-###注意
+### 注意
 ログイン画面にアクセスする方法はいくつかあるのですが、
 普通にログインしようとした場合と、ocw-iでセッションタイムエラー
 になった時のみ対応しています。  
@@ -26,6 +30,7 @@ chromeの右上の三点リーダー的なのから、設定
 自動ログインが実行されなかったら、
 manifest.jsonの"content_scripts"というところに
 以下のように追加してください。  
+わからなかったら教えてください、変更します。
 ```json:manifest.json
 "content_scripts" : [
     {
