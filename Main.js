@@ -5,6 +5,7 @@ if(document.getElementsByName("message3").length==0) {
     AxmlHttp.open("GET",AccountURL,true);
     AxmlHttp.send(null);
     AxmlHttp.onload = function() {
+        // 学籍番号入力
         let Account = AxmlHttp.responseText;
         document.getElementsByName("usr_name").item(0).value = Account;
     }
@@ -13,8 +14,10 @@ if(document.getElementsByName("message3").length==0) {
     PxmlHttp.open("GET",PasswordURL,true);
     PxmlHttp.send(null);
     PxmlHttp.onload = function() {
+        // パスワード入力
         let Password = PxmlHttp.responseText;
         document.getElementsByName("usr_password").item(0).value = Password;
+        // OKボタンクリック
         document.getElementsByName("OK").item(0).click();
     }
 
