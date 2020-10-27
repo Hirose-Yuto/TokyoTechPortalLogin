@@ -10,6 +10,10 @@
     {
       "matches" : ["https://secure.ocw.titech.ac.jp/ocwi/timeout.html"],
       "js" : ["Jump.js"]
+    },
+    {
+      "matches" : ["https://secure.ocw.titech.ac.jp/ocwi/index.php*"],
+      "js" : ["TaskCustomize.js"]
     }
   ],
   "permissions": [
