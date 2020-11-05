@@ -14,6 +14,10 @@
     {
       "matches" : ["https://secure.ocw.titech.ac.jp/ocwi/index.php*"],
       "js" : ["TaskCustomize.js"]
+    },
+    {
+      "matches" : ["https://wlanauth.noc.titech.ac.jp/"],
+      "js" : ["WiFiLogin.js"]
     }
   ],
   "permissions": [
