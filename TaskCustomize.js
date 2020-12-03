@@ -2,6 +2,15 @@
 taskSpace = document.getElementById("notPresented")
 if (taskSpace == null) {
     //課題がない
+    if (document.getElementById("index") != null) {
+        contentPlace = document.getElementsByClassName("contents").item(0)
+        imageURL = chrome.extension.getURL('CONGRATULATIONS.jpeg');
+        try {
+            contentPlace.innerHTML = '<img src="' + imageURL + '" alt="お祝い画像", width="100%", height="100%">' + contentPlace.innerHTML
+        } catch (e) {
+            contentPlace.innerHTML = '<h1>おめでとう！君は課題をすべて終わらせた！CONGRATULATIONS.jpegをフォルダーに追加すれば画像を表示できるぞ！</h1> <br>' + contentPlace.innerHTML
+        }
+    }
 } else {
     // 日付フォーマット用
     function formatDate (date, format) {

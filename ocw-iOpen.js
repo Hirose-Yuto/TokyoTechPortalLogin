@@ -1,0 +1,1 @@
+window.open("https://secure.ocw.titech.ac.jp/ocwi/index.php")
