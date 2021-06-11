@@ -1,0 +1,251 @@
+@charset "utf-8";
+/*////////////////////////////////////////////////////
+////	Identification : table.css
+////	Description : table properties
+////////////////////////////////////////////////////*/
+
+/*------------------------------------------------
+	Table Style
+------------------------------------------------*/
+table {
+    margin-bottom:20px;
+}
+
+table tr th a{
+    color:#ffffff!important;}
+
+table, th, td {
+    font-size:1.2em;
+    border:1px solid #ccc;
+}
+
+th, td {
+    padding:10px;
+}
+
+th {
+    text-align:center;
+}
+
+table th img{
+    vertical-align:middle;}
+
+td {
+}
+
+td.disable {
+    background-color:#ccc;
+}
+
+
+/*------------------------------------------------
+	table contents
+------------------------------------------------*/
+.contents table {
+
+    margin-bottom:20px;
+}
+
+.contents table thead th {
+    color:#fff;
+    font-weight:bold;
+    background-color:#004185;
+}
+
+.contents table tbody th {
+    color:#000;
+    background-color:#fafafa;
+    width:180px;
+}
+
+.contents table.column tbody th {
+    width:auto;
+}
+
+.contents table th.ocw {
+    background-color:#dbf0fa;
+}
+
+.contents table th.ocwi {
+    background-color:#eeedd8;
+}
+
+.contents table .ocw,
+.contents table .ocwi {
+    width:50%;
+}
+
+.contents table .common {
+    width:auto;
+}
+
+.contents table table {
+    width:100%;
+    margin-bottom:0;
+}
+
+.contents table table .ocw,
+.contents table table .ocwi {
+    width:auto;
+}
+
+.contents table table th {
+    width:auto;
+}
+
+.contents table table td {
+    text-align:center;
+}
+
+#info table th,
+#exercise table th,
+#contact table th,
+#popup table th,
+#index #notPresented table th{
+    color:#ffffff;
+    background-color:#007cc1;}
+
+#contact table th,
+#popup table th{
+    width:11em;}
+
+#info table {
+    width:100%;}
+
+/*------------------------------------------------
+	index
+------------------------------------------------*/
+
+#index #mainarea div#schedule table{
+    width:795px;
+    text-align:left;
+    margin:2px 22px;
+    border:2px solid #ccc;}
+
+#index #mainarea div#schedule table tr.day th.null{
+    background:url(../images/schedule_day_null.gif) left top;}
+
+#index #mainarea div#schedule table tr.day th{
+    width:auto;}
+
+#index #mainarea div#schedule table tr.day th{
+    padding:0;}
+
+#index #mainarea div#schedule table tr.body th{
+    background:url(../images/schedule_num_bg.gif) left top;}
+
+#index #mainarea div#schedule table tr.body td{
+    color:#000000;
+    background:#ffffff;}
+
+#index #mainarea div#schedule table tr.body td a{
+    color:#005396;}
+
+#index #mainarea div#schedule table tr.body td.holiday{
+    background:#f7f7f7;}
+
+#index #mainarea div#schedule table tr.body td.changeCR{
+    background:#e6fafb;}
+
+#index #mainarea div#schedule table tr.body td.chageDate{
+    background:#ffeaea;}
+
+#index #mainarea div#schedule table tr.dayNum th{
+    color:#ffffff;
+    font-weight:bold;
+    background:url(../images/schedule_day_bg.gif);}
+
+#index #notPresented table{
+    width:838px;
+    margin:0 10px;}
+
+#index #notPresented table tr td{
+    background:#ffffff;}
+
+/*------------------------------------------------
+	table width
+------------------------------------------------*/
+
+#mainarea table .openDay,
+#mainarea table .closeDay,
+#mainarea table .date{
+    width:7em;}
+
+#mainarea table .classRoom{
+    width:4em;}
+
+#mainarea table .period{
+    width:10em;}
+
+#mainarea table .courseName,
+#mainarea table .lectureName,
+#mainarea table .exerciseName,
+#mainarea table .teacherName{
+    width:14em;}
+
+#mainarea table .auto{
+    width:auto;}
+
+#mainarea table.browser .os,
+#mainarea table.browser .browser{
+    width:10em;}
+
+#mainarea table.browser .indicate,
+#mainarea table.browser .print{
+    text-align:center;
+    width:5em;}
+
+/*------------------------------------------------
+	exercise
+------------------------------------------------*/
+
+#exercise table tr th.status,
+#exercise table tr td.status{
+    width:6em;}
+
+.english table tr th.status,
+.english table tr td.status{
+    width:88px;}
+
+#exercise table tr td.status{
+    vertical-align:middle;
+    text-align:center;}
+
+#exercise .present table{
+    width:820px;
+    margin:0 20px 10px;}
+
+#exercise .present table td{
+    background:#fff;}
+
+#exercise .present table th.del,
+#exercise .present table td.del{
+    width:2em;
+    text-align:center;
+}
+
+/*------------------------------------------------
+	Law
+------------------------------------------------*/
+
+#law table{
+    width:780px;
+    margin:0 40px 10px;}
+
+#law table caption{
+    font-size:100%;
+    line-height:1.4;}
+
+#law table tr td input[type="text"]{
+    width:20em;}
+
+/*------------------------------------------------
+	mypage
+------------------------------------------------*/
+
+#mypage table tr th{
+    width:12em;}
+
+#mypage table tr td input[type="text"]{
+    width:20em;}
+

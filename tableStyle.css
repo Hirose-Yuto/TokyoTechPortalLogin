@@ -1,0 +1,44 @@
+@charset "utf-8";
+/*////////////////////////////////////////////////////
+////	Identification : table.css
+////	Description : table properties
+////////////////////////////////////////////////////*/
+
+/*------------------------------------------------
+	Table Style
+------------------------------------------------*/
+table {
+    margin-bottom:20px;
+}
+
+table tr th a{
+    color:#ffffff!important;}
+
+table, th, td {
+    font-size:1em;
+    border:1px solid #ccc;
+}
+
+th, td {
+    padding:10px;
+}
+
+th {
+    color: #fff;
+    text-align:center;
+    background: #007cc1;
+}
+
+tr {
+    background: #fff;
+}
+
+table th img{
+    vertical-align:middle;}
+
+td {
+}
+
+td.disable {
+    background-color:#ccc;
+}

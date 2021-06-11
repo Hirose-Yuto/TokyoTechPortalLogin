@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Tokyo_Tech_Portal_Login",
-  "version": "1.1.4.0",
+  "version": "1.2.0.0",
   "content_scripts": [
     {
       "matches": ["https://portal.nap.gsic.titech.ac.jp/GetAccess/Login*"],
@@ -20,8 +20,28 @@
       "js" : ["WiFiLogin.js"]
     },
     {
+      "matches" : ["https://wlanauth.noc.titech.ac.jp/fs/customwebauth/failure.html?switch_url=https://wlanauth.noc.titech.ac.jp/login.html&ap_mac=64:16:8d:ee:8e:40&wlan=TokyoTech&statusCode=5"],
+      "js" : ["WiFiLogin.js"]
+    },
+    {
       "matches" : ["https://portal.nap.gsic.titech.ac.jp/GetAccess/ResourceList"],
       "js" : ["ocw-iOpen.js"]
+    },
+    {
+      "matches" : ["https://t2schola.titech.ac.jp/"],
+      "js" : ["T2SCHOLATaskDisplay.js"]
+    },
+    {
+      "matches" : ["https://t2schola.titech.ac.jp/course/index.php*"],
+      "js" : ["T2SCHOLATaskDisplay.js"]
+    },
+    {
+      "matches" : ["https://www.titech.ac.jp/enrolled/life/schedules"],
+      "js" : ["getSchedule.js"]
+    },
+    {
+      "matches" : ["https://www.titech.ac.jp/student/students/life/schedules"],
+      "js" : ["getSchedule.js"]
     }
   ],
   "permissions": [
@@ -29,6 +49,7 @@
   ],
   "web_accessible_resources": [
     "*.txt",
-    "*.jpeg"
+    "*.jpg",
+    "*.css"
   ]
 }
