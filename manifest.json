@@ -20,7 +20,7 @@
       "js" : ["WiFiLogin.js"]
     },
     {
-      "matches" : ["https://wlanauth.noc.titech.ac.jp/fs/customwebauth/failure.html?switch_url=https://wlanauth.noc.titech.ac.jp/login.html&ap_mac=64:16:8d:ee:8e:40&wlan=TokyoTech&statusCode=5"],
+      "matches" : ["https://wlanauth.noc.titech.ac.jp/fs/customwebauth/failure.html*"],
       "js" : ["WiFiLogin.js"]
     },
     {
